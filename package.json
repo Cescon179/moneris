@@ -7,7 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check-deps": "npm outdated",
+    "lint": "standard",
+    "test": "blue-tape ./tests/test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/Cescon179/moneris/issues"
   },
-  "homepage": "https://github.com/Cescon179/moneris#readme"
+  "homepage": "https://github.com/Cescon179/moneris#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "blue-tape": "^1.0.0",
+    "debug": "^2.3.3",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  }
 }
